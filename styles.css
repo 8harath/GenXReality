@@ -3,7 +3,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000000; /* P6234 */
+    background-color: #f0f0f0; /* P66df */
     color: #FFFFFF; /* P87ff */
 }
 
@@ -23,7 +23,7 @@ a:hover {
 
 /* Header */
 header {
-    background-color: #90EE90; /* P543f */
+    background-color: #333; /* P82d1 */
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -318,6 +318,17 @@ footer ul li a:hover {
         transform: translateY(0);
         opacity: 1;
     }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+.slide-in {
+    opacity: 0;
+    transform: translateY(100px);
+    animation: slideIn 2s ease-in-out forwards;
 }
 
 /* Responsive Design */
