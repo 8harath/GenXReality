@@ -3,8 +3,8 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
-    color: #333;
+    background-color: #000000; /* P6234 */
+    color: #FFFFFF; /* P87ff */
 }
 
 h1, h2, h3 {
@@ -23,7 +23,7 @@ a:hover {
 
 /* Header */
 header {
-    background-color: #007bff;
+    background-color: #90EE90; /* P543f */
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -89,7 +89,7 @@ nav ul li a:hover {
 }
 
 #hero button {
-    background-color: #007bff;
+    background-color: #90EE90; /* P76ad */
     color: #fff;
     border: none;
     padding: 15px 30px;
