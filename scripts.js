@@ -43,4 +43,22 @@ document.addEventListener('DOMContentLoaded', function() {
         const scrollPosition = window.pageYOffset;
         heroSection.style.backgroundPositionY = `${scrollPosition * 0.5}px`;
     });
+
+    // Add fade-in class to header
+    const header = document.querySelector('header');
+    header.classList.add('fade-in');
+
+    // Add slide-in class to sections
+    const aboutSection = document.getElementById('about');
+    const servicesSection = document.getElementById('services');
+    const vrLabSection = document.getElementById('vr-lab');
+    const marketOpportunitySection = document.getElementById('market-opportunity');
+    aboutSection.classList.add('slide-in');
+    servicesSection.classList.add('slide-in');
+    vrLabSection.classList.add('slide-in');
+    marketOpportunitySection.classList.add('slide-in');
+
+    // Add fade-in class to contact section
+    const contactSection = document.getElementById('contact');
+    contactSection.classList.add('fade-in');
 });
