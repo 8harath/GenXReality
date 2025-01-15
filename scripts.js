@@ -61,4 +61,16 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add fade-in class to contact section
     const contactSection = document.getElementById('contact');
     contactSection.classList.add('fade-in');
+
+    // Bounce animation for buttons
+    const buttons = document.querySelectorAll('button');
+    buttons.forEach(button => {
+        button.classList.add('bounce');
+    });
+
+    // Rotate animation for icons
+    const icons = document.querySelectorAll('nav ul li a, footer ul li a');
+    icons.forEach(icon => {
+        icon.classList.add('rotate');
+    });
 });
