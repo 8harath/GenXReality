@@ -3,28 +3,28 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0; /* P66df */
-    color: #FFFFFF; /* P87ff */
+    background-color: #000000; /* P33d5 */
+    color: #FFFFFF; /* P33d5 */
 }
 
 h1, h2, h3 {
     font-family: 'Poppins', sans-serif;
-    color: #333;
+    color: #00FF00; /* P33d5 */
 }
 
 a {
     text-decoration: none;
-    color: #007bff;
+    color: #00FF00; /* P33d5 */
 }
 
 a:hover {
-    color: #0056b3;
+    color: #FFFFFF; /* P33d5 */
 }
 
 /* Header */
 header {
-    background-color: #333; /* P82d1 */
-    color: #fff;
+    background-color: #000000; /* P33d5 */
+    color: #00FF00; /* P33d5 */
     padding: 20px;
     text-align: center;
     position: fixed;
@@ -58,13 +58,13 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #00FF00; /* P33d5 */
     font-size: 1.1em;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #ffcc00;
+    color: #FFFFFF; /* P33d5 */
 }
 
 /* Hero Section */
@@ -89,8 +89,8 @@ nav ul li a:hover {
 }
 
 #hero button {
-    background-color: #90EE90; /* P76ad */
-    color: #fff;
+    background-color: #00FF00; /* P33d5 */
+    color: #000000; /* P33d5 */
     border: none;
     padding: 15px 30px;
     font-size: 1.2em;
@@ -99,7 +99,7 @@ nav ul li a:hover {
 }
 
 #hero button:hover {
-    background-color: #0056b3;
+    background-color: #FFFFFF; /* P33d5 */
 }
 
 /* About Us */
@@ -133,7 +133,7 @@ nav ul li a:hover {
 .service {
     margin: 20px 0;
     padding: 20px;
-    background-color: #fff;
+    background-color: #000000; /* P33d5 */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
@@ -146,6 +146,7 @@ nav ul li a:hover {
 .service h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
+    color: #00FF00; /* P33d5 */
 }
 
 /* VR Lab Setup */
@@ -179,7 +180,7 @@ nav ul li a:hover {
 .use-case {
     margin: 20px 0;
     padding: 20px;
-    background-color: #fff;
+    background-color: #000000; /* P33d5 */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
@@ -192,6 +193,7 @@ nav ul li a:hover {
 .use-case h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
+    color: #00FF00; /* P33d5 */
 }
 
 /* Market Opportunity */
@@ -209,7 +211,7 @@ nav ul li a:hover {
 .value-proposition {
     margin: 20px 0;
     padding: 20px;
-    background-color: #fff;
+    background-color: #000000; /* P33d5 */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
@@ -222,6 +224,7 @@ nav ul li a:hover {
 .value-proposition h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
+    color: #00FF00; /* P33d5 */
 }
 
 /* Contact Us */
@@ -251,13 +254,15 @@ nav ul li a:hover {
     max-width: 500px;
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #00FF00; /* P33d5 */
     border-radius: 5px;
+    background-color: #000000; /* P33d5 */
+    color: #00FF00; /* P33d5 */
 }
 
 #contact button {
-    background-color: #007bff;
-    color: #fff;
+    background-color: #00FF00; /* P33d5 */
+    color: #000000; /* P33d5 */
     border: none;
     padding: 15px 30px;
     font-size: 1.2em;
@@ -266,13 +271,13 @@ nav ul li a:hover {
 }
 
 #contact button:hover {
-    background-color: #0056b3;
+    background-color: #FFFFFF; /* P33d5 */
 }
 
 /* Footer */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #000000; /* P33d5 */
+    color: #00FF00; /* P33d5 */
     padding: 20px;
     text-align: center;
 }
@@ -290,13 +295,13 @@ footer ul li {
 }
 
 footer ul li a {
-    color: #fff;
+    color: #00FF00; /* P33d5 */
     font-size: 1.1em;
     transition: color 0.3s ease;
 }
 
 footer ul li a:hover {
-    color: #ffcc00;
+    color: #FFFFFF; /* P33d5 */
 }
 
 /* Animations */
@@ -320,6 +325,27 @@ footer ul li a:hover {
     }
 }
 
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 .fade-in {
     opacity: 0;
     animation: fadeIn 2s ease-in-out forwards;
@@ -329,6 +355,14 @@ footer ul li a:hover {
     opacity: 0;
     transform: translateY(100px);
     animation: slideIn 2s ease-in-out forwards;
+}
+
+.bounce {
+    animation: bounce 2s infinite;
+}
+
+.rotate {
+    animation: rotate 2s linear infinite;
 }
 
 /* Responsive Design */
