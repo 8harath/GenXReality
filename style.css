@@ -1,0 +1,176 @@
+:root {
+    --primary-teal: #20B2AA;
+    --primary-blue: #4169E1;
+    --primary-purple: #8A2BE2;
+    --neutral-background: white;
+    --text-dark: #333;
+    --gradient-blue: linear-gradient(135deg, #4169E1, #20B2AA);
+    --gradient-purple: linear-gradient(135deg, #8A2BE2, #4169E1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: white;
+    overflow-x: hidden;
+}
+
+/* Navigation Styles */
+header {
+    position: fixed;
+    width: 100%;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 7%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.logo h1 {
+    font-weight: 700;
+    color: var(--primary-blue);
+    font-size: 1.8rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--primary-blue);
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    background: white;
+    padding: 3rem;
+    text-align: center;
+    max-width: 800px;
+}
+
+.hero-content h2 {
+    color: var(--primary-blue);
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.cta-btn {
+    background: var(--primary-blue);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin-top: 20px;
+    border-radius: 50px;
+    transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+    background: var(--primary-purple);
+}
+
+/* Sections */
+section {
+    padding: 5rem 7%;
+    background: white;
+}
+
+/* Card Styles */
+.benefits, .use-case-grid, .value-points {
+    display: flex;
+    gap: 30px;
+}
+
+.benefit-card, .use-case-card, .value-point {
+    flex: 1;
+    background: white;
+    padding: 2rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.benefit-card:hover, .use-case-card:hover, .value-point:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Contact Form */
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 3rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+}
+
+.contact button {
+    background: var(--primary-blue);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    transition: background 0.3s ease;
+}
+
+.contact button:hover {
+    background: var(--primary-purple);
+}
+
+/* Footer */
+footer {
+    background: #f4f4f4;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .benefits, .use-case-grid, .value-points {
+        flex-direction: column;
+    }
+}
+
